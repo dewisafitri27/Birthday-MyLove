@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- BACKGROUND -->
+    <div id="stars"></div>
+    <div id="shooting-stars"></div>
+
+    <!-- MUSIC -->
+    <audio id="bgMusic" loop>
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+
+    <button class="music-btn" id="musicBtn">
+        ♪
+    </button>
+
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <p class="small-title">
+                A LITTLE SURPRISE FOR YOU
+            </p>
+
+            <h1>
+                Happy Birthday
+                <span id="nameHero">Sayang</span>
+            </h1>
+
+            <p class="hero-subtitle">
+                Ada sesuatu yang ingin aku sampaikan untukmu...
+            </p>
+
+            <button class="main-btn" onclick="nextSection('letter')">
+                Buka Surat ❤️
+            </button>
+
+        </div>
+
+        <div class="scroll">
+            ↓
+        </div>
+
+    </section>
+
+
+    <!-- ================= LETTER ================= -->
+    <section class="section letter-section" id="letter">
+
+        <div class="section-title">
+            <span>01</span>
+            <h2>Untuk Kamu</h2>
+        </div>
+
+        <div class="letter-card">
+
+            <div class="heart">
+                ♥
+            </div>
+
+            <p>
+                Untuk seseorang yang sangat berarti dalam hidupku,
+            </p>
+
+            <p>
+                Hari ini adalah hari spesial karena seseorang yang
+                spesial juga sedang bertambah usia.
+            </p>
+
+            <p>
+                Terima kasih sudah hadir, sudah menjadi bagian dari
+                cerita hidupku, dan sudah memberikan begitu banyak
+                warna di dalam hari-hariku.
+            </p>
+
+            <p>
+                Semoga di usia yang baru ini, semua hal baik datang
+                kepadamu satu per satu.
+            </p>
+
+            <p class="signature">
+                With love,<br>
+                <span>Someone who loves you ❤️</span>
+            </p>
+
+        </div>
+
+        <button class="outline-btn" onclick="nextSection('memories')">
+            Lanjut →
+        </button>
+
+    </section>
+
+
+    <!-- ================= MEMORIES ================= -->
+    <section class="section memories-section" id="memories">
+
+        <div class="section-title">
+            <span>02</span>
+            <h2>Our Memories</h2>
+            <p>Beberapa momen yang ingin selalu aku ingat.</p>
+        </div>
+
+        <div class="gallery">
+
+            <div class="photo-card">
+                <img src="foto1.jpeg" alt="Memory 1">
+                <div class="photo-caption">
+                    <span>01</span>
+                    <p>Our Moment</p>
+                </div>
+            </div>
+
+            <div class="photo-card">
+                <img src="foto2.jpeg" alt="Memory 2">
+                <div class="photo-caption">
+                    <span>02</span>
+                    <p>A moment to remember</p>
+                </div>
+            </div>
+
+            <div class="photo-card">
+                <img src="foto3.jpeg" alt="Memory 3">
+                <div class="photo-caption">
+                    <span>03</span>
+                    <p>One of my favorites</p>
+                </div>
+            </div>
+
+            <div class="photo-card">
+                <img src="foto4.jpeg" alt="Memory 4">
+                <div class="photo-caption">
+                    <span>04</span>
+                    <p>Forever in my memory</p>
+                </div>
+            </div>
+
+        </div>
+
+        <button class="outline-btn" onclick="nextSection('birthday')">
+            Ada satu hal lagi →
+        </button>
+
+    </section>
+
+
+    <!-- ================= BIRTHDAY ================= -->
+    <section class="section birthday-section" id="birthday">
+
+        <div class="birthday-content">
+
+            <p class="small-title">
+                TODAY IS YOUR SPECIAL DAY
+            </p>
+
+            <h2>
+                Happy Birthday,
+                <span id="nameBirthday">Sayang</span> ❤️
+            </h2>
+
+            <p class="birthday-text">
+                Selamat bertambah usia untuk orang yang selalu
+                punya tempat spesial di hatiku.
+            </p>
+
+            <!-- COUNTDOWN -->
+            <div class="countdown">
+
+                <div class="time-box">
+                    <span id="days">00</span>
+                    <small>Hari</small>
+                </div>
+
+                <div class="time-box">
+                    <span id="hours">00</span>
+                    <small>Jam</small>
+                </div>
+
+                <div class="time-box">
+                    <span id="minutes">00</span>
+                    <small>Menit</small>
+                </div>
+
+                <div class="time-box">
+                    <span id="seconds">00</span>
+                    <small>Detik</small>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= WISH ================= -->
+    <section class="section wish-section" id="wish">
+
+        <div class="wish-card">
+
+            <div class="gold-star">
+                ✦
+            </div>
+
+            <h2>
+                My Wish For You
+            </h2>
+
+            <p>
+                Semoga kamu selalu diberikan kesehatan,
+                kebahagiaan, rezeki yang luas, dan dikelilingi
+                oleh orang-orang yang benar-benar menyayangimu.
+            </p>
+
+            <p>
+                Semoga semua impian yang sedang kamu perjuangkan
+                perlahan bisa menjadi kenyataan.
+            </p>
+
+            <p>
+                Dan semoga, di antara banyaknya perjalanan hidup
+                yang akan kamu lalui, aku masih bisa menjadi salah
+                satu orang yang menemanimu.
+            </p>
+
+        </div>
+
+        <button class="main-btn" onclick="showFinalMessage()">
+            Buka Pesan Terakhir ✨
+        </button>
+
+    </section>
+
+
+    <!-- ================= FINAL ================= -->
+    <section class="final-section" id="final">
+
+        <div class="final-stars">
+            ✦
+        </div>
+
+        <p class="small-title">
+            ONE LAST THING...
+        </p>
+
+        <h1 id="finalName">
+            Happy Birthday ❤️
+        </h1>
+
+        <p class="final-message" id="finalMessage">
+            Terima kasih sudah menjadi bagian dari hidupku.
+            Semoga hari ini menjadi awal dari banyak kebahagiaan
+            yang akan datang untukmu.
+        </p>
+
+        <div class="final-heart">
+            ♥
+        </div>
+
+        <p class="forever">
+            Always wishing the best for you.
+        </p>
+
+    </section>
+
+
+    <script src="script.js"></script>
+
+
+</body>
+<section class="video-section">
+
+    <p class="small-title">OUR STORY</p>
+
+    <h2>Potongan Cerita Kita ❤️</h2>
+
+    <div class="video-card">
+
+        <div class="video-wrapper">
+            <video controls playsinline>
+                <source src="video.mp4" type="video/mp4">
+                Browser kamu tidak mendukung video.
+            </video>
+        </div>
+
+        <p class="video-text">
+            Setiap momen kecil bersama kamu,
+            selalu punya cerita yang ingin aku simpan. ❤️
+        </p>
+
+    </div>
+
+</section>
+
+
+</html>
